@@ -1,7 +1,17 @@
-#pragma comment(lib, "Plugins/glfw/lib-vc2013/glfw3")
-#pragma comment(lib, "Plugins/glew/lib/Release/Win32/glew32")
+#pragma comment (lib,"Plugins/SDL/lib/x86/SDL2")
+#pragma comment (lib,"Plugins/SDL/lib/x86/SDL2main")
+#pragma comment (lib,"Plugins/SDL/lib/x86/SDL2test")
+#include "Code\Window\WindowCreation.h"
+#include "Code\AllIncludes\AllIncludes.cpp"
+#undef main
 
-int main()
+int main(int argc, char* argv[])
 {
 
+	WindowCreation* newWin=new WindowCreation;
+	newWin->makeNewWindow(argc,argv);
+
+
+	return 0;
 }
+

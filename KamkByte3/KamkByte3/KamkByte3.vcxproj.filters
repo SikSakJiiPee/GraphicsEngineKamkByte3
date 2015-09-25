@@ -21,6 +21,9 @@
     <ClCompile Include="Code\Window\WindowCreation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Code\AllIncludes\AllIncludes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\Window\WindowCreation.h">

@@ -1,10 +1,13 @@
 #pragma once
-#include
+
+#include "..\AllIncludes\AllIncludes.cpp"
+
 class WindowCreation
 {
 public:
-	WindowCreation();
-	~WindowCreation();
+	WindowCreation(){};
+	~WindowCreation(void){};
+	int makeNewWindow(int argc, char* argv[]);
 private:
 	bool keepWindowOpen;
 };
