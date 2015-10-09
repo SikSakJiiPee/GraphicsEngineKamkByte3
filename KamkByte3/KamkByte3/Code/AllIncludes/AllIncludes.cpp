@@ -1,10 +1,13 @@
 //Default
 #include <stdio.h>
+#include <stdlib.h>
 #include <iostream>
+#include <Windows.h>
+#include <gl\GL.h>
+#include <gl\GLU.h>
 
 
 //Plugins
-#include "..\..\Plugins\glew\include\GL\glew.h"
 #include "..\..\Plugins\GLM\glm\glm.hpp"
 
 //SDL
@@ -39,7 +42,7 @@
 #include "..\..\Plugins\SDL\include\SDL_name.h"
 #include "..\..\Plugins\SDL\include\SDL_opengl.h"
 #include "..\..\Plugins\SDL\include\SDL_opengles.h"
-#include "..\..\Plugins\SDL\include\SDL_opengles2.h"
+//#include "..\..\Plugins\SDL\include\SDL_opengles2.h"
 #include "..\..\Plugins\SDL\include\SDL_pixels.h"
 #include "..\..\Plugins\SDL\include\SDL_platform.h"
 #include "..\..\Plugins\SDL\include\SDL_power.h"
