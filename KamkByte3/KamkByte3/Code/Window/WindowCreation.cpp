@@ -19,7 +19,7 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 	
 
 	window = SDL_CreateWindow(PROGRAM_NAME, SDL_WINDOWPOS_CENTERED, 
-	SDL_WINDOWPOS_CENTERED,width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_BORDERLESS| SDL_WINDOW_RESIZABLE);
+	SDL_WINDOWPOS_CENTERED,width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_RESIZABLE);
 	//SDL_SetWindowSize(window,);
 	if (window == NULL) {
 		
@@ -43,8 +43,15 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 	glClearColor(0.0, 0.0, 0.0, 1.0);
 	glClear(GL_COLOR_BUFFER_BIT);
 	SDL_GL_SwapWindow(window);
-	//Loopin tappo.
+	//Loopin rakenne.
 	SDL_Event _engineRunningLoop;
+	//Ikkunan tappo joko x tai esc.
+	while (SDL_PollEvent(&_engineRunningLoop))
+	{
+		if (_engineRunningLoop.type == SDL_QUIT)
+			running = false;
+	}
+
 		while (SDL_PollEvent(&_engineRunningLoop))
 		{
 			switch (_engineRunningLoop.type)
