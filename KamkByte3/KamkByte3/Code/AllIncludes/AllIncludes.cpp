@@ -5,6 +5,8 @@
 #include <Windows.h>
 #include <gl\GL.h>
 #include <gl\GLU.h>
+#include <math.h>
+
 
 
 //Plugins

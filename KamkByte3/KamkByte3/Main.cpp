@@ -2,10 +2,14 @@
 #pragma comment (lib,"Plugins/SDL/lib/x86/SDL2main")
 #pragma comment (lib,"Plugins/SDL/lib/x86/SDL2test")
 #pragma comment (lib,"opengl32")
+#pragma comment (lib,"Glu32")
 #include "Code\Window\WindowCreation.h"
 #include "Code\AllIncludes\AllIncludes.cpp"
-
 #undef main
+
+
+
+
 
 int main(int argc, char* argv[])
 {
@@ -14,6 +18,7 @@ int main(int argc, char* argv[])
 	newWin->makeNewWindow(argc,argv);
 
 
+	
 	return 0;
 }
 
