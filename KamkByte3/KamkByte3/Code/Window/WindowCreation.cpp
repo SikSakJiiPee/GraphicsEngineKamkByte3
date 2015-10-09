@@ -1,13 +1,15 @@
 #include "WindowCreation.h"
 #define PROGRAM_NAME "KamkByte3"
+static const int width = 1024;
+static const int height = 768;
 int WindowCreation::makeNewWindow(int argc, char* argv[])
 {
 
 	SDL_Window *window;
 	SDL_GLContext _windowsOpenGlContext;
-
+	
 	SDL_Init(SDL_INIT_VIDEO);
-
+	//Alustetaan opengl.
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 2);
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 1);
 
@@ -17,8 +19,8 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 	
 
 	window = SDL_CreateWindow(PROGRAM_NAME, SDL_WINDOWPOS_CENTERED, 
-	SDL_WINDOWPOS_CENTERED,640, 480, SDL_WINDOW_OPENGL | SDL_WINDOW_SHOWN);
-	
+	SDL_WINDOWPOS_CENTERED,width, height, SDL_WINDOW_OPENGL | SDL_WINDOW_BORDERLESS| SDL_WINDOW_RESIZABLE);
+	//SDL_SetWindowSize(window,);
 	if (window == NULL) {
 		
 		printf("Could not create window: %s\n", SDL_GetError());
@@ -31,15 +33,18 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 
 
 
-	glClearColor(0.0, 0.0, 0.0, 1.0);
-	glClear(GL_COLOR_BUFFER_BIT);
-	SDL_GL_SwapWindow(window);
 	
 	
+	//Looppi
 	BOOLEAN running=TRUE;
 	while (running != FALSE)
 	{
-		SDL_Event _engineRunningLoop;
+	//Putsataan ruutu
+	glClearColor(0.0, 0.0, 0.0, 1.0);
+	glClear(GL_COLOR_BUFFER_BIT);
+	SDL_GL_SwapWindow(window);
+	//Loopin tappo.
+	SDL_Event _engineRunningLoop;
 		while (SDL_PollEvent(&_engineRunningLoop))
 		{
 			switch (_engineRunningLoop.type)
@@ -65,7 +70,10 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 				break;
 			}
 		}
+		//Loopin Tehtävät.
+
 	}
+	//Tuhotaan Ikkuna.
 	SDL_GL_DeleteContext(_windowsOpenGlContext);
 	SDL_DestroyWindow(window);
 	
