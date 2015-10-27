@@ -9,8 +9,9 @@ RendererClass::~RendererClass()
 {
 }
 
-void RendererClass::init()
+void RendererClass::init(SDL_Window* WinMain)
 {
+	SDL_GL_SwapWindow(WinMain);
 	glClearColor(0.0, 0.0, 0.0, 1.0);
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -19,8 +20,9 @@ void RendererClass::init()
 
 }
 
-void RendererClass::display()
+void RendererClass::display(SDL_Window* WinMain)
 {
+	SDL_GL_SwapWindow(WinMain);
 	glClear(GL_COLOR_BUFFER_BIT);
 	glBegin(GL_TRIANGLES);
 	glVertex3f(0.0, 2.0, -5.0);

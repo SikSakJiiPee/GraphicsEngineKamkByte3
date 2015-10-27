@@ -1,6 +1,7 @@
 #pragma once
 
 #include "..\AllIncludes\AllIncludes.cpp"
+#include "..\RendererClass\RendererClass.h"
 
 class WindowCreation
 {

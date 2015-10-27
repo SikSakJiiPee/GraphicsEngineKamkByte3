@@ -6,7 +6,7 @@ public:
 	RendererClass();
 	~RendererClass();
 	void render();
-	void init();
-	void display();
+	void init(SDL_Window* WinMain);
+	void display(SDL_Window* WinMain);
 };
 

@@ -39,9 +39,7 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 	BOOLEAN running = TRUE;
 	while (running != FALSE)
 	{
-		//Putsataan ruutu
-		glClearColor(0.0, 0.0, 0.0, 1.0);
-		glClear(GL_COLOR_BUFFER_BIT);
+		
 		SDL_GL_SwapWindow(window);
 		//Loopin rakenne.
 		SDL_Event _engineRunningLoop;
@@ -78,7 +76,9 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 			}
 		}
 		//Loopin Tehtävät.
-
+		RendererClass* Draw = new RendererClass();
+		Draw->init(window);
+		Draw->display(window);
 	}
 	//Tuhotaan Ikkuna.
 	SDL_GL_DeleteContext(_windowsOpenGlContext);
