@@ -109,3 +109,22 @@ void ObjectMold::setLocationPoints(float ax, float ay, float bx, float by, float
 	}
 
 }
+
+
+void ObjectMold::saveCleanFileObject()
+{
+
+
+}
+void ObjectMold::saceObject()
+{
+
+
+}
+
+ObjectMold ObjectMold::getObject()
+{
+
+	ObjectMold results;
+	return results;
+}

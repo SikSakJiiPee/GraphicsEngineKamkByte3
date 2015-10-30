@@ -15,7 +15,10 @@ public:
 	float getLocationPoint(int i);	
 	void setLocationPoints(float ax, float ay, float bx, float by, float cx, float cy, float dx, float dy, float ex, float ey, float fx, float fy, float z, float alpha);
 
-	
+	void saveCleanFileObject();
+	void saceObject();
+
+	ObjectMold getObject();
 
 private:
 
