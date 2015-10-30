@@ -7,7 +7,7 @@
 #include <gl\GLU.h>
 #include <math.h>
 #include <vector>
-
+#include <map>
 
 
 //Plugins
