@@ -79,6 +79,7 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 		RendererClass* Draw = new RendererClass();
 		Draw->init(window);
 		Draw->display(window);
+
 	}
 	//Tuhotaan Ikkuna.
 	SDL_GL_DeleteContext(_windowsOpenGlContext);

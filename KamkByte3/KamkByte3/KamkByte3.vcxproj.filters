@@ -27,12 +27,18 @@
     <ClCompile Include="Code\RendererClass\RendererClass.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Code\ObjectRelatives\Mold\ObjectMold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\Window\WindowCreation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Code\RendererClass\RendererClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\ObjectRelatives\Mold\ObjectMold.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

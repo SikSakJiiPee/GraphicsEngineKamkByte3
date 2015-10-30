@@ -71,11 +71,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Code\AllIncludes\AllIncludes.cpp" />
+    <ClCompile Include="Code\ObjectRelatives\Mold\ObjectMold.cpp" />
     <ClCompile Include="Code\RendererClass\RendererClass.cpp" />
     <ClCompile Include="Code\Window\WindowCreation.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Code\ObjectRelatives\Mold\ObjectMold.h" />
     <ClInclude Include="Code\RendererClass\RendererClass.h" />
     <ClInclude Include="Code\Window\WindowCreation.h" />
   </ItemGroup>

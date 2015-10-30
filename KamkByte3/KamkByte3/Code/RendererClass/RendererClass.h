@@ -1,5 +1,6 @@
 #pragma once
 #include "..\AllIncludes\AllIncludes.cpp"
+#include "../ObjectRelatives/Mold/ObjectMold.h"
 class RendererClass
 {
 public:
