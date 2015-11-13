@@ -88,3 +88,4 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 	SDL_Quit();
 	return 0;
 };
+

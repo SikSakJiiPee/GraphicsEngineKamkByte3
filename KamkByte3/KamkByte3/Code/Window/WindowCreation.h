@@ -11,5 +11,6 @@ public:
 	int makeNewWindow(int argc, char* argv[]);
 private:
 	bool keepWindowOpen;
+	
 };
 
