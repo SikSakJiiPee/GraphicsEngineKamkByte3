@@ -71,17 +71,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Code\AllIncludes\AllIncludes.cpp" />
+    <ClCompile Include="Code\ObjectRelatives\Container\ObjectContainer.cpp" />
     <ClCompile Include="Code\ObjectRelatives\Mold\ObjectMold.cpp" />
     <ClCompile Include="Code\RendererClass\RendererClass.cpp" />
     <ClCompile Include="Code\ShaderManager\ShaderManager.cpp" />
     <ClCompile Include="Code\Window\WindowCreation.cpp" />
+    <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Code\ObjectRelatives\Container\ObjectContainer.h" />
     <ClInclude Include="Code\ObjectRelatives\Mold\ObjectMold.h" />
     <ClInclude Include="Code\RendererClass\RendererClass.h" />
     <ClInclude Include="Code\ShaderManager\ShaderManager.h" />
     <ClInclude Include="Code\Window\WindowCreation.h" />
+    <ClInclude Include="InputManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
