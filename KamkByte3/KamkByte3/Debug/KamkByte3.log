@@ -1,18 +1,11 @@
-﻿Build started 30.10.2015 12:56:56.
-     1>Project "C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\KamkByte3\KamkByte3.vcxproj" on node 2 (Build target(s)).
+﻿Build started 13.11.2015 9:03:14.
+     1>Project "C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\KamkByte3\KamkByte3.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Code\ObjectRelatives\Mold\ObjectMold.cpp
-         ObjectMold.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Debug\KamkByte3.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Debug\KamkByte3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Debug\KamkByte3.lib" /MACHINE:X86 Debug\AllIncludes.obj
-         Debug\ObjectContainer.obj
-         Debug\ObjectMold.obj
-         Debug\RendererClass.obj
-         Debug\WindowCreation.obj
-         Debug\Main.obj
-         KamkByte3.vcxproj -> C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Debug\KamkByte3.exe
-     1>Done Building Project "C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\KamkByte3\KamkByte3.vcxproj" (Build target(s)).
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt InputManager.cpp
+         InputManager.cpp
+     1>c:\users\jussi-pekkajar\desktop\graphicsenginekamkbyte3\kamkbyte3\kamkbyte3\inputmanager.h(2): fatal error C1083: Cannot open include file: '../AllIncludes/AllIncludes.cpp': No such file or directory
+     1>Done Building Project "C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\KamkByte3\KamkByte3.vcxproj" (Build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:01.29
+Time Elapsed 00:00:00.13
