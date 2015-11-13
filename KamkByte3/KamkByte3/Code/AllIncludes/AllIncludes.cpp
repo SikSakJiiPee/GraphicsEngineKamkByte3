@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <iostream>
 #include <Windows.h>
+#include "..\..\Plugins\glew\include\GL\glew.h"
 #include <gl\GL.h>
 #include <gl\GLU.h>
 #include <math.h>
@@ -12,7 +13,7 @@
 
 //Plugins
 #include "..\..\Plugins\GLM\glm\glm.hpp"
-#include "..\..\Plugins\glew\include\GL\glew.h"
+
 
 //SDL
 #include "..\..\Plugins\SDL\include\begin_code.h"
