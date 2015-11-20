@@ -9,6 +9,8 @@
 #include <math.h>
 #include <vector>
 #include <map>
+#include <fstream>
+#include <string>
 
 
 //Plugins

@@ -8,7 +8,7 @@ public:
 	ObjectContainer(){};
 	~ObjectContainer(void){};
 
-	void addObject(std::string type, std::string name, ObjectMold* gameObject);
+	void addObject(std::string name, ObjectMold* gameObject);
 	void removeObject(std::string objectName );
 
 	int getObjectCount() const;
@@ -22,6 +22,5 @@ public:
 
 private:
 	std::map<std::string, ObjectMold*>allObjects;
-	std::map<std::string, ObjectMold*>::iterator id;
 };
 
