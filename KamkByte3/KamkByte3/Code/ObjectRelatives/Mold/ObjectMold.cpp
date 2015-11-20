@@ -20,6 +20,16 @@ void ObjectMold::setDirectory(std::string path)
 	Directory = path;
 }
 
+float ObjectMold::getScale()
+{
+	return ObjectScale;
+}
+
+void ObjectMold::setScale(int scale)
+{
+	ObjectScale = scale;
+}
+
 
 float ObjectMold::getLocationPoint(int i)
 {
@@ -110,21 +120,16 @@ void ObjectMold::setLocationPoints(float ax, float ay, float bx, float by, float
 
 }
 
-
-void ObjectMold::saveCleanFileObject()
+void ObjectMold::readObject()
 {
-
-
+	std::cout << "\nName: " << Name << "\nDirectory: " << Directory << "\nScale: " << ObjectScale << "\nLocation: [";
+	for (int i = 0; i < 14; i++)
+	{
+		std::cout << Location[i] << ", ";
+		if (i == 13)
+		{
+			std::cout << "]\n";
+		}
+	}
 }
-void ObjectMold::saceObject()
-{
 
-
-}
-
-ObjectMold ObjectMold::getObject()
-{
-
-	ObjectMold results;
-	return results;
-}
