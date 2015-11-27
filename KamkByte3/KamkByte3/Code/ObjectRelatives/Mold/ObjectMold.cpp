@@ -25,7 +25,7 @@ float ObjectMold::getScale()
 	return ObjectScale;
 }
 
-void ObjectMold::setScale(int scale)
+void ObjectMold::setScale(float scale)
 {
 	ObjectScale = scale;
 }
