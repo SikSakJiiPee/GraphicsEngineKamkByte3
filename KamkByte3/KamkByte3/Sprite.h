@@ -9,7 +9,7 @@ public:
 	Sprite();
 	~Sprite();
 
-	void init(int posX, int posY, int width, int height);
+	void init(float posX, float posY, float width, float height);
 
 	void draw();
 

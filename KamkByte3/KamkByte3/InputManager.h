@@ -25,7 +25,7 @@ public:
 
 
 	//getterit
-	glm::vec2 getMousecoords() const { return mouseCoords; }
+	glm::vec2 getMouseCoords() const { return mouseCoords; }
 
 private:
 	//palauttaa true jos nappi oli pohjassa viime framella
