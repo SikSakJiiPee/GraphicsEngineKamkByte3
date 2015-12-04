@@ -3,7 +3,7 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "Plugins/SDL/include/SDL.h"
+#include "../../Plugins/SDL/include/SDL.h"
 
 //Tulostaa virheviestin ja lopettaa ohjelman
 void fatalError(std::string errorString)

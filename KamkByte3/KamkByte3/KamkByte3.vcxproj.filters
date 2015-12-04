@@ -4,9 +4,6 @@
     <ClCompile Include="Code\ShaderManager\ShaderManager.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="InputManager.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
     <ClCompile Include="Code\AllIncludes\AllIncludes.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
@@ -25,17 +22,20 @@
     <ClCompile Include="Code\Window\WindowCreation.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="ErrorManager.cpp">
+    <ClCompile Include="Code\Sprite\Sprite.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="Sprite.cpp">
+    <ClCompile Include="Code\InputManager\InputManager.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\GLSLProgram\GLSLProgram.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\ErrorManager\ErrorManager.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="InputManager.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Code\ObjectRelatives\Container\ObjectContainer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -51,10 +51,16 @@
     <ClInclude Include="Code\Window\WindowCreation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ErrorManager.h">
+    <ClInclude Include="Code\ErrorManager\ErrorManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Sprite.h">
+    <ClInclude Include="Code\GLSLProgram\GLSLProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\InputManager\InputManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\Sprite\Sprite.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

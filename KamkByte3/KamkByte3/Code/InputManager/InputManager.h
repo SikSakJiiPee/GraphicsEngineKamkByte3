@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Plugins\GLM\glm\glm.hpp"
+#include "..\..\Plugins\GLM\glm\glm.hpp"
 
 #include <unordered_map>
 
