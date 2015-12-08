@@ -28,6 +28,8 @@ float ObjectMold::getScale()
 void ObjectMold::setScale(float scale)
 {
 	ObjectScale = scale;
+
+
 }
 
 
@@ -120,6 +122,36 @@ void ObjectMold::setLocationPoints(float ax, float ay, float bx, float by, float
 
 }
 
+
+float ObjectMold::getOrigin(char i)
+{
+	switch (i)
+	{
+	case 'x':
+	{
+		return Origin[0];
+		break;
+	}
+	case 'y':
+	{
+		return Origin[1];
+		break;
+	}
+	default:
+		break;
+	}
+
+}
+
+void ObjectMold::setOrigin(float x, float y)
+{
+	
+			Origin[0] = x;
+			Origin[1] = y;
+
+
+}
+
 void ObjectMold::readObject()
 {
 	std::cout << "\nName: " << Name << "\nDirectory: " << Directory << "\nScale: " << ObjectScale << "\nLocation: [";
@@ -127,6 +159,19 @@ void ObjectMold::readObject()
 	{
 		std::cout << Location[i] << ", ";
 		if (i == 13)
+		{
+			std::cout << "]\n";
+		}
+	}
+	std::cout<< "\nOrigin: [";
+	for (int i = 0; i < 2; i++)
+	{
+		std::cout << Origin[i];
+		if (i == 0)
+		{
+			std::cout << ", ";
+		}
+		if (i == 1)
 		{
 			std::cout << "]\n";
 		}

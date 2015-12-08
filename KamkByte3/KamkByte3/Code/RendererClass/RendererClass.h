@@ -1,6 +1,6 @@
 #pragma once
 #include "..\AllIncludes\AllIncludes.cpp"
-#include "../ObjectRelatives/Mold/ObjectMold.h"
+#include "../ObjectRelatives/Container/ObjectContainer.h"
 class RendererClass
 {
 public:
@@ -8,6 +8,7 @@ public:
 	~RendererClass();
 	void render();
 	void init(SDL_Window* WinMain);
-	void display(SDL_Window* WinMain);
+	void display(SDL_Window* WinMain, ObjectContainer* Access);
+
 };
 

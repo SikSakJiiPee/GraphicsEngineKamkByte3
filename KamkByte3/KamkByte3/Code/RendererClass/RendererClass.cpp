@@ -1,5 +1,5 @@
 #include "RendererClass.h"
-
+#include "../ObjectRelatives/Movement/DrawMovement.h"
 
 RendererClass::RendererClass()
 {
@@ -20,25 +20,14 @@ void RendererClass::init(SDL_Window* WinMain)
 
 }
 
-void RendererClass::display(SDL_Window* WinMain)
+void RendererClass::display(SDL_Window* WinMain, ObjectContainer* Access)
 {
-
-	ObjectMold* Access=new ObjectMold;
+	Access->containerDraw(WinMain);
 	
+	
+	DrawMovement*momentum = new DrawMovement;
+	char Input;
+	std::cin >> Input;
+	momentum->MoveObject("Player",Access,Input);
 
-	Access->setLocationPoints(-0.325f, -0.5f, -0.325f, 0.5f, 0.325f, 0.5f, 0.325f, 0.5f, -0.325f, -0.5f, 0.325f, -0.5f, 1.0f, 1.0f);
-
-	SDL_GL_SwapWindow(WinMain);
-	glClear(GL_COLOR_BUFFER_BIT);
-	glBegin(GL_TRIANGLES);
-	glColor3f(1.0, 0.0, 1.0);
-	glVertex3f(Access->getLocationPoint(0), Access->getLocationPoint(1), Access->getLocationPoint(12));
-	glVertex3f(Access->getLocationPoint(2), Access->getLocationPoint(3), Access->getLocationPoint(12));
-	glVertex3f(Access->getLocationPoint(4), Access->getLocationPoint(5), Access->getLocationPoint(12));
-
-	glVertex3f(Access->getLocationPoint(6), Access->getLocationPoint(7), Access->getLocationPoint(12));
-	glVertex3f(Access->getLocationPoint(8), Access->getLocationPoint(9), Access->getLocationPoint(12));
-	glVertex3f(Access->getLocationPoint(10), Access->getLocationPoint(11), Access->getLocationPoint(12));
-
-	glEnd();
 }

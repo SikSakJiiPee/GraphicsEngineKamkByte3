@@ -18,6 +18,9 @@ public:
 	float getLocationPoint(int i);	
 	void setLocationPoints(float ax, float ay, float bx, float by, float cx, float cy, float dx, float dy, float ex, float ey, float fx, float fy, float z, float alpha);
 
+	float getOrigin(char i);
+	void setOrigin(float x, float y);
+
 	void readObject();
 
 private:
@@ -26,6 +29,7 @@ private:
 	std::string Directory = "No Dircetory";
 	float ObjectScale = 1.0f;
 	float Location[14] ;
+	float Origin[2];
 	
 
 
