@@ -31,8 +31,14 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 	//Bufferi synkronoi itsensä monitorin vertical synkin kanssa.
 	SDL_GL_SetSwapInterval(1);
 
-	//Check the OpenGL version
+	//Katsotaan tietokoneen OpenGL -versio
 	std::printf("***   OpenGL Version: %s   ***\n", glGetString(GL_VERSION));
+
+
+	RendererClass* Draw = new RendererClass();
+
+	ObjectContainer* ObjectAccess = new ObjectContainer;
+	ObjectAccess->loadContainerBin();
 
 
 
@@ -79,9 +85,11 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 		//Loopin Tehtävät.
 		RendererClass* Draw = new RendererClass();
 		Draw->init(window);
-		Draw->display(window);
+		Draw->display(window, ObjectAccess);
 
 	}
+	//ObjectAccess->saveContainerBin();
+
 	//Tuhotaan Ikkuna.
 	SDL_GL_DeleteContext(_windowsOpenGlContext);
 	SDL_DestroyWindow(window);

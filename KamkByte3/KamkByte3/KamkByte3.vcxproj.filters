@@ -34,6 +34,9 @@
     <ClCompile Include="Code\ErrorManager\ErrorManager.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Code\ObjectRelatives\Movement\DrawMovement.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\ObjectRelatives\Container\ObjectContainer.h">
@@ -61,6 +64,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Code\Sprite\Sprite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\ObjectRelatives\Movement\DrawMovement.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
