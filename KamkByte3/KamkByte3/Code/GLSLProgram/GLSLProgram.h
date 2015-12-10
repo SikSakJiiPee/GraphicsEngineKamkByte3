@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "../../Plugins/glew/include/GL/glew.h"
+#include "GL/glew.h"
 
 class GLSLProgram
 {

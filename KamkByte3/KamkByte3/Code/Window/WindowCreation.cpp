@@ -31,7 +31,8 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 	//Bufferi synkronoi itsensä monitorin vertical synkin kanssa.
 	SDL_GL_SetSwapInterval(1);
 
-
+	//Check the OpenGL version
+	std::printf("***   OpenGL Version: %s   ***\n", glGetString(GL_VERSION));
 
 
 
