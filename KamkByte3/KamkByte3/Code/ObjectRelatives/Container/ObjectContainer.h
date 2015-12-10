@@ -17,8 +17,8 @@ public:
 	void saveContainerBin();
 	void loadContainerBin();
 
-	void containerDraw();
-	void containerUpdateObjects();
+	void containerDraw(SDL_Window* WinMain);
+	void containerUpdateObjects(float inx,float iny,char obj,std::string name);
 
 private:
 	std::map<std::string, ObjectMold*>allObjects;
