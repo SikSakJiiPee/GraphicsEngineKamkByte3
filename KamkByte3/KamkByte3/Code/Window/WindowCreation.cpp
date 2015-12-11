@@ -32,7 +32,7 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 	SDL_GL_SetSwapInterval(1);
 
 	//Katsotaan tietokoneen OpenGL -versio
-	std::printf("***   OpenGL Version: %s   ***\n", glGetString(GL_VERSION));
+	std::printf("***   OpenGL version of this computer: %s   ***\n", glGetString(GL_VERSION));
 
 
 	RendererClass* Draw = new RendererClass();
