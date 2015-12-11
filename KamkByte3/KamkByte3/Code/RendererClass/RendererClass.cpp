@@ -1,6 +1,6 @@
 #include "RendererClass.h"
 #include "../ObjectRelatives/Movement/DrawMovement.h"
-
+//
 RendererClass::RendererClass()
 {
 }

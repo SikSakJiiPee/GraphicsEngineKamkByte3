@@ -1,5 +1,5 @@
 #include "ObjectMold.h"
-
+//
 std::string ObjectMold::getName()
 {
 	return Name;
@@ -139,6 +139,7 @@ float ObjectMold::getOrigin(char i)
 	}
 	default:
 		break;
+		return NULL;
 	}
 
 }

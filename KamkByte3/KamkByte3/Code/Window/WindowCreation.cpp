@@ -2,6 +2,7 @@
 #define PROGRAM_NAME "KamkByte3"
 static const int width = 1024;
 static const int height = 768;
+//
 int WindowCreation::makeNewWindow(int argc, char* argv[])
 {
 
@@ -31,16 +32,11 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 	//Bufferi synkronoi itsensä monitorin vertical synkin kanssa.
 	SDL_GL_SetSwapInterval(1);
 
-	//Katsotaan tietokoneen OpenGL -versio
-	std::printf("***   OpenGL version of this computer: %s   ***\n", glGetString(GL_VERSION));
-
 
 	RendererClass* Draw = new RendererClass();
 
 	ObjectContainer* ObjectAccess = new ObjectContainer;
 	ObjectAccess->loadContainerBin();
-
-
 
 	//Looppi
 	BOOLEAN running = TRUE;
@@ -83,9 +79,8 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 			}
 		}
 		//Loopin Tehtävät.
-		RendererClass* Draw = new RendererClass();
 		Draw->init(window);
-		Draw->display(window, ObjectAccess);
+		Draw->display(window,ObjectAccess);
 
 	}
 	//ObjectAccess->saveContainerBin();
