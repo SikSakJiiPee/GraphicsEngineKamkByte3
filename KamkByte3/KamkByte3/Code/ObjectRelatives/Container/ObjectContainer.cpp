@@ -389,26 +389,24 @@ void ObjectContainer::containerUpdateObjects(float inx,float iny,char obj,std::s
 				
 				float oldX;
 				float oldY;
-				float orgX = saveIt->second->getOrigin('x');
-				float orgY = saveIt->second->getOrigin('y');
 				float newLoc[14];
 			
 					oldX = saveIt->second->getLocationPoint(0);
 					oldY = saveIt->second->getLocationPoint(1);
-						newLoc[0] = orgX + (oldX - orgX)*cos(inx) - (oldY - orgY)*sin(inx);
-						newLoc[1] = orgY + (oldX - orgX)*sin(inx) + (oldY - orgY)*cos(inx);
+						newLoc[0] =oldX*cos(inx) - oldY*sin(inx);
+						newLoc[1] =oldX*sin(inx) + oldY*cos(inx);
 					oldX = saveIt->second->getLocationPoint(2);
 					oldY = saveIt->second->getLocationPoint(3);
-						newLoc[2] = orgX + (oldX - orgX)*cos(inx) - (oldY - orgY)*sin(inx);
-						newLoc[3] = orgY + (oldX - orgX)*sin(inx) + (oldY - orgY)*cos(inx);
+						newLoc[2] = oldX*cos(inx)-oldY*sin(inx);
+						newLoc[3] = oldX*sin(inx) +oldY*cos(inx);
 					oldX = saveIt->second->getLocationPoint(4);
 					oldY = saveIt->second->getLocationPoint(5);
-						newLoc[4] = orgX + (oldX - orgX)*cos(inx) - (oldY - orgY)*sin(inx);
-						newLoc[5] = orgY + (oldX - orgX)*sin(inx) + (oldY - orgY)*cos(inx);
+						newLoc[4] = oldX*cos(inx) - oldY*sin(inx);
+						newLoc[5] = oldX*sin(inx) + oldY*cos(inx);
 					oldX = saveIt->second->getLocationPoint(8);
 					oldY = saveIt->second->getLocationPoint(9);
-						newLoc[8] = orgX + (oldX - orgX)*cos(inx) - (oldY - orgY)*sin(inx);
-						newLoc[9] = orgY + (oldX - orgX)*sin(inx) + (oldY - orgY)*cos(inx);
+						newLoc[8] =oldX *cos(inx) - oldY*sin(inx);
+						newLoc[9] = oldX*sin(inx) + oldY*cos(inx);
 			
 				newLoc[6] = newLoc[2];
 				newLoc[7] = newLoc[3];
