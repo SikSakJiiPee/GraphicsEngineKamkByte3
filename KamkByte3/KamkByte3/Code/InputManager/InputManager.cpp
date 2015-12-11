@@ -13,10 +13,11 @@ InputManager::~InputManager()
 
 void InputManager::Update()
 {
-	//käydään keyMap läpi "for ecah" loopilla ja kopioidaan se previousKeyMappiin
+	//käydään keyMap läpi "for each" loopilla ja kopioidaan se previousKeyMappiin
 	for (auto& it : keyMap)
 	{
 		previousKeyMap[it.first] = it.second;
+		isKeyPressed(it.second);
 	}
 }
 
@@ -64,4 +65,34 @@ bool InputManager::wasKeyDown(unsigned int keyID)
 	{
 		return false;
 	}
+}
+
+void InputManager::Process(ObjectContainer* Access,DrawMovement* move)
+{
+	
+	if (isKeyDown(SDLK_w))
+	{
+		move->MoveObject("Player", Access, 'u');
+	}
+	if (isKeyDown(SDLK_s))
+	{
+		move->MoveObject("Player", Access, 'd');
+	}
+	if (isKeyDown(SDLK_d))
+	{
+		move->MoveObject("Player", Access, 'r');
+	}
+	if (isKeyDown(SDLK_a))
+	{
+		move->MoveObject("Player", Access, 'l');
+	}
+	if (isKeyDown(SDLK_e))
+	{
+		move->MoveObject("Player", Access, 'e');
+	}
+	if (isKeyDown(SDLK_q))
+	{
+		move->MoveObject("Player", Access, 'q');
+	}
+
 }

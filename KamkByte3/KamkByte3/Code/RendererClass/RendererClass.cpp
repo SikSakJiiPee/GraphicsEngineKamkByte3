@@ -1,6 +1,5 @@
 #include "RendererClass.h"
-#include "../ObjectRelatives/Movement/DrawMovement.h"
-//
+
 RendererClass::RendererClass()
 {
 }
@@ -25,9 +24,6 @@ void RendererClass::display(SDL_Window* WinMain, ObjectContainer* Access)
 	Access->containerDraw(WinMain);
 	
 	
-	DrawMovement*momentum = new DrawMovement;
-	char Input;
-	std::cin >> Input;
-	momentum->MoveObject("Player",Access,Input);
+
 
 }

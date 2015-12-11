@@ -25,6 +25,16 @@ void DrawMovement::MoveObject(std::string name, ObjectContainer* Access, char In
 		Access->containerUpdateObjects(0.0f, -0.1f, 'm', "player");
 		break;
 	}
+	case 'q':
+	{
+		Access->containerUpdateObjects(0.1f, 0.0f, 'r', "player");
+		break;
+	}
+	case 'e':
+	{
+		Access->containerUpdateObjects(-0.1f, 0.0f, 'r', "player");
+		break;
+	}
 	default:
 		break;
 	}
@@ -36,10 +46,12 @@ void DrawMovement::SpinObject(std::string name, ObjectContainer* Access, char In
 	{
 	case 'q':
 	{
+		Access->containerUpdateObjects(0.1f, 0.0f, 'r', "player");
 		break;
 	}
 	case 'e':
 	{
+		Access->containerUpdateObjects(-0.1f, 0.0f, 'r', "player");
 		break;
 	}
 	default:

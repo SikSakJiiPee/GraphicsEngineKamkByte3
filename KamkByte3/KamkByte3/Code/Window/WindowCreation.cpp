@@ -34,7 +34,8 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 
 
 	RendererClass* Draw = new RendererClass();
-
+	InputManager* Inputs = new InputManager();
+	DrawMovement* Momentum = new DrawMovement();
 	ObjectContainer* ObjectAccess = new ObjectContainer;
 	ObjectAccess->loadContainerBin();
 
@@ -42,7 +43,8 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 	BOOLEAN running = TRUE;
 	while (running != FALSE)
 	{
-		
+
+	
 		SDL_GL_SwapWindow(window);
 		//Loopin rakenne.
 		SDL_Event _engineRunningLoop;
@@ -51,34 +53,33 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 		{
 			if (_engineRunningLoop.type == SDL_QUIT)
 				running = false;
-		}
+		
 
-		while (SDL_PollEvent(&_engineRunningLoop))
+		switch (_engineRunningLoop.type)
 		{
-			switch (_engineRunningLoop.type)
-			{
-			case SDL_KEYDOWN:
-				printf("Key press detected\n");
-				switch (_engineRunningLoop.key.keysym.sym)
-				{
-				case SDLK_ESCAPE:
-					running = FALSE;
-					break;
-
-				default:
-					break;
-				}
+			/* Look for a keypress */
+		case SDL_KEYDOWN:
+		{
+			// Send Key id to input manager.
+			Inputs->pressKey(_engineRunningLoop.key.keysym.sym);
 				break;
+		}
+			//SDL_KEYUP event for release
 
-			case SDL_KEYUP:
-				printf("Key release detected\n");
-				break;
-
-			default:
+		case SDL_KEYUP:
+		{
+			Inputs->releaseKey (_engineRunningLoop.key.keysym.sym);
 				break;
 			}
+
+		default:
+			break;
+		}
 		}
 		//Loopin Tehtävät.
+
+		Inputs->Process(ObjectAccess,Momentum);
+
 		Draw->init(window);
 		Draw->display(window,ObjectAccess);
 

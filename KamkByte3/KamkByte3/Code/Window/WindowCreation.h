@@ -3,7 +3,8 @@
 #include "..\AllIncludes\AllIncludes.cpp"
 #include "..\RendererClass\RendererClass.h"
 #include "..\ObjectRelatives\Container\ObjectContainer.h"
-//
+#include "..\InputManager\InputManager.h"
+#include "../ObjectRelatives/Movement/DrawMovement.h"
 
 class WindowCreation
 {

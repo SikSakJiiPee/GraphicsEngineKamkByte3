@@ -1,8 +1,11 @@
 #pragma once
 
 #include "..\..\Plugins\GLM\glm\glm.hpp"
-
+#include "../AllIncludes/AllIncludes.cpp"
 #include <unordered_map>
+#include "../ObjectRelatives/Container/ObjectContainer.h"
+#include "../ObjectRelatives/Movement/DrawMovement.h"
+
 
 class InputManager
 {
@@ -23,6 +26,8 @@ public:
 	//palauttaa true jos nappia juuri painettiin
 	bool isKeyPressed(unsigned int keyID);
 
+	void Process(ObjectContainer* Access,DrawMovement* move);
+
 
 	//getterit
 	glm::vec2 getMouseCoords() const { return mouseCoords; }
@@ -34,6 +39,7 @@ private:
 	std::unordered_map<unsigned int, bool> keyMap;
 	std::unordered_map<unsigned int, bool> previousKeyMap;
 	glm::vec2 mouseCoords;
+	
 
 };
 

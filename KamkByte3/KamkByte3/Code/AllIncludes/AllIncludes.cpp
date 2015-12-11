@@ -18,6 +18,7 @@
 
 
 //SDL
+
 #include "..\..\Plugins\SDL\include\begin_code.h"
 #include "..\..\Plugins\SDL\include\close_code.h"
 #include "..\..\Plugins\SDL\include\SDL.h"
