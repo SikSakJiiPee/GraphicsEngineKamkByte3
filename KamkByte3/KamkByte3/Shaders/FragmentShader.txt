@@ -1,6 +1,15 @@
 #version 130
+Fragment shader operoi annetun polygonin jokaisella pikselillä
 
-out vec3 color;
+in vec2 fragmentPosition;
+in vec4 fragmentColor;
+in vec2 fragmentUV;
+
+//Neljä komponenttia sisältävä float vektori pistetään ulos jokaista pikseliä kohden
+out vec4 color;
+
+uniform float time;
+uniform sampler2D mySampler;
 
 void main()
 {

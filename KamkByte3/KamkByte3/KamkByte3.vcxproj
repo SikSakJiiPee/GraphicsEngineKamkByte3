@@ -96,6 +96,7 @@
     <ClInclude Include="Code\RendererClass\RendererClass.h" />
     <ClInclude Include="Code\ShaderManager\ShaderManager.h" />
     <ClInclude Include="Code\Sprite\Sprite.h" />
+    <ClInclude Include="Code\Vertex\Vertex.h" />
     <ClInclude Include="Code\Window\WindowCreation.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

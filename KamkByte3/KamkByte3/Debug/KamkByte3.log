@@ -1,16 +1,10 @@
-﻿Build started 15.12.2015 11:13:41.
-     1>Project "C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\KamkByte3\KamkByte3.vcxproj" on node 2 (Build target(s)).
+﻿Build started 15.12.2015 14:51:32.
+     1>Project "C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\KamkByte3\KamkByte3.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Code\ObjectRelatives\Container\ObjectContainer.cpp
-         ObjectContainer.cpp
-     1>c:\users\lassikes\documents\visual studio 2013\projects\kamkbyte3\kamkbyte3\code\objectrelatives\container\objectcontainer.cpp(68): warning C4018: '>=' : signed/unsigned mismatch
-     1>c:\users\lassikes\documents\visual studio 2013\projects\kamkbyte3\kamkbyte3\code\objectrelatives\container\objectcontainer.cpp(92): warning C4018: '>=' : signed/unsigned mismatch
-     1>c:\users\lassikes\documents\visual studio 2013\projects\kamkbyte3\kamkbyte3\code\objectrelatives\container\objectcontainer.cpp(112): warning C4018: '>=' : signed/unsigned mismatch
-     1>c:\users\lassikes\documents\visual studio 2013\projects\kamkbyte3\kamkbyte3\code\objectrelatives\container\objectcontainer.cpp(167): warning C4018: '>=' : signed/unsigned mismatch
-     1>c:\users\lassikes\documents\visual studio 2013\projects\kamkbyte3\kamkbyte3\code\objectrelatives\container\objectcontainer.cpp(187): warning C4018: '>=' : signed/unsigned mismatch
-     1>c:\users\lassikes\documents\visual studio 2013\projects\kamkbyte3\kamkbyte3\code\objectrelatives\container\objectcontainer.cpp(204): warning C4018: '>=' : signed/unsigned mismatch
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Code\Sprite\Sprite.cpp
+         Sprite.cpp
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Debug\KamkByte3.exe" /INCREMENTAL /NOLOGO opengl32.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Debug\KamkByte3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Debug\KamkByte3.lib" /MACHINE:X86 Debug\AllIncludes.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\Debug\KamkByte3.exe" /INCREMENTAL /NOLOGO opengl32.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\Debug\KamkByte3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\Debug\KamkByte3.lib" /MACHINE:X86 Debug\AllIncludes.obj
          Debug\ErrorManager.obj
          Debug\GLSLProgram.obj
          Debug\InputManager.obj
@@ -22,9 +16,9 @@
          Debug\Sprite.obj
          Debug\WindowCreation.obj
          Debug\Main.obj
-         KamkByte3.vcxproj -> C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Debug\KamkByte3.exe
-     1>Done Building Project "C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\KamkByte3\KamkByte3.vcxproj" (Build target(s)).
+         KamkByte3.vcxproj -> C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\Debug\KamkByte3.exe
+     1>Done Building Project "C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\KamkByte3\KamkByte3.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:01.41
+Time Elapsed 00:00:01.25
