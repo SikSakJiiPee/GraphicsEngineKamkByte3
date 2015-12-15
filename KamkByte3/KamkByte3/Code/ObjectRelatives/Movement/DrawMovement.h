@@ -8,7 +8,6 @@ public:
 	~DrawMovement(void){};
 
 	void MoveObject(std::string name, ObjectContainer* Access,char Input);
-	void SpinObject(std::string name, ObjectContainer* Access, char Input);
 	void MoveCamera(ObjectContainer* Access, char Input);
 
 

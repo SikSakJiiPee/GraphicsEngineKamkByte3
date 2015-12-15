@@ -94,5 +94,15 @@ void InputManager::Process(ObjectContainer* Access,DrawMovement* move)
 	{
 		move->MoveObject("Player", Access, 'q');
 	}
+	if (isKeyDown(SDLK_z))
+	{
+		move->MoveObject("Player", Access, 'b');
+	}
+
+	if (isKeyDown(SDLK_x))
+	{
+		move->MoveObject("Player", Access, 's');
+	}
+
 
 }

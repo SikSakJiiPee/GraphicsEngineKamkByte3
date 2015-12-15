@@ -35,29 +35,22 @@ void DrawMovement::MoveObject(std::string name, ObjectContainer* Access, char In
 		Access->containerUpdateObjects(-0.1f, 0.0f, 'r', "player");
 		break;
 	}
+	case 'b':
+	{
+		Access->containerUpdateObjects(0.01f, 0.0f, 's', "player");
+		break;
+	}
+	case 's':
+	{
+		Access->containerUpdateObjects(-0.01f, 0.0f, 's', "player");
+		break;
+	}
 	default:
 		break;
 	}
 	
 };
-void DrawMovement::SpinObject(std::string name, ObjectContainer* Access, char Input)
-{
-	switch (Input)
-	{
-	case 'q':
-	{
-		Access->containerUpdateObjects(0.1f, 0.0f, 'r', "player");
-		break;
-	}
-	case 'e':
-	{
-		Access->containerUpdateObjects(-0.1f, 0.0f, 'r', "player");
-		break;
-	}
-	default:
-		break;
-	}
-};
+
 void DrawMovement::MoveCamera(ObjectContainer* Access, char Input)
 {
 

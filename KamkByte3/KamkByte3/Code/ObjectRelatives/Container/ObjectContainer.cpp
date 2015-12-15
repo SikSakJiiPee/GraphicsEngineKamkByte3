@@ -347,6 +347,7 @@ void ObjectContainer::containerDraw(SDL_Window* WinMain)
 		float x, y;
 		x = saveIt->second->getOrigin('x');
 		y = saveIt->second->getOrigin('y');
+
 		
 		
 		
@@ -355,13 +356,13 @@ void ObjectContainer::containerDraw(SDL_Window* WinMain)
 		glColor3f(1.0, 0.0, 1.0);
 			
 			
-			glVertex3f(saveIt->second->getLocationPoint(0)+x, saveIt->second->getLocationPoint(1)+y, saveIt->second->getLocationPoint(12));
-			glVertex3f(saveIt->second->getLocationPoint(2)+x, saveIt->second->getLocationPoint(3)+y, saveIt->second->getLocationPoint(12));
-			glVertex3f(saveIt->second->getLocationPoint(4)+x, saveIt->second->getLocationPoint(5)+y, saveIt->second->getLocationPoint(12));
+		glVertex3f(saveIt->second->getLocationPoint(0) + x, saveIt->second->getLocationPoint(1) + y, saveIt->second->getLocationPoint(12));
+			glVertex3f(saveIt->second->getLocationPoint(2) + x, saveIt->second->getLocationPoint(3) + y, saveIt->second->getLocationPoint(12));
+			glVertex3f(saveIt->second->getLocationPoint(4) + x, saveIt->second->getLocationPoint(5) + y, saveIt->second->getLocationPoint(12));
 
-			glVertex3f(saveIt->second->getLocationPoint(6)+x, saveIt->second->getLocationPoint(7)+y, saveIt->second->getLocationPoint(12));
-			glVertex3f(saveIt->second->getLocationPoint(8)+x, saveIt->second->getLocationPoint(9)+y, saveIt->second->getLocationPoint(12));
-			glVertex3f(saveIt->second->getLocationPoint(10)+x, saveIt->second->getLocationPoint(11)+y, saveIt->second->getLocationPoint(12));
+			glVertex3f(saveIt->second->getLocationPoint(6) + x, saveIt->second->getLocationPoint(7) + y, saveIt->second->getLocationPoint(12));
+			glVertex3f(saveIt->second->getLocationPoint(8) + x, saveIt->second->getLocationPoint(9) + y, saveIt->second->getLocationPoint(12));
+			glVertex3f(saveIt->second->getLocationPoint(10) + x, saveIt->second->getLocationPoint(11) + y, saveIt->second->getLocationPoint(12));
 
 			glEnd();
 
@@ -419,6 +420,22 @@ void ObjectContainer::containerUpdateObjects(float inx,float iny,char obj,std::s
 				
 				break;
 			}
+			case 's':
+			{
+
+				saveIt->second->setScale(saveIt->second->getScale() + inx);
+				float drawScale = 1.0f + inx;
+				float newLoc[14];
+				for (int i = 0; i < 13; i++)
+				{
+					newLoc[i] = saveIt->second->getLocationPoint(i)*drawScale;
+				}
+				newLoc[12] = saveIt->second->getLocationPoint(12);
+				newLoc[13] = saveIt->second->getLocationPoint(13);
+				saveIt->second->setLocationPoints(newLoc[0], newLoc[1], newLoc[2], newLoc[3], newLoc[4], newLoc[5], newLoc[6], newLoc[7], newLoc[8], newLoc[9], newLoc[10], newLoc[11], newLoc[12], newLoc[13]);
+
+				break;
+			}
 			default:
 				break;
 			}
@@ -427,6 +444,68 @@ void ObjectContainer::containerUpdateObjects(float inx,float iny,char obj,std::s
 		{
 			for (std::map<std::string, ObjectMold*>::iterator saveIt = allObjects.begin(); saveIt != allObjects.end(); ++saveIt)
 			{
+
+				switch (obj)
+				{
+				case 'm':
+				{
+					saveIt->second->setOrigin(saveIt->second->getOrigin('x') + inx, saveIt->second->getOrigin('y') + iny);
+					break;
+				}
+				case 'r':
+				{
+
+					float oldX;
+					float oldY;
+					float newLoc[14];
+
+					oldX = saveIt->second->getLocationPoint(0);
+					oldY = saveIt->second->getLocationPoint(1);
+					newLoc[0] = oldX*cos(inx) - oldY*sin(inx);
+					newLoc[1] = oldX*sin(inx) + oldY*cos(inx);
+					oldX = saveIt->second->getLocationPoint(2);
+					oldY = saveIt->second->getLocationPoint(3);
+					newLoc[2] = oldX*cos(inx) - oldY*sin(inx);
+					newLoc[3] = oldX*sin(inx) + oldY*cos(inx);
+					oldX = saveIt->second->getLocationPoint(4);
+					oldY = saveIt->second->getLocationPoint(5);
+					newLoc[4] = oldX*cos(inx) - oldY*sin(inx);
+					newLoc[5] = oldX*sin(inx) + oldY*cos(inx);
+					oldX = saveIt->second->getLocationPoint(8);
+					oldY = saveIt->second->getLocationPoint(9);
+					newLoc[8] = oldX *cos(inx) - oldY*sin(inx);
+					newLoc[9] = oldX*sin(inx) + oldY*cos(inx);
+
+					newLoc[6] = newLoc[2];
+					newLoc[7] = newLoc[3];
+					newLoc[10] = newLoc[4];
+					newLoc[11] = newLoc[5];
+					newLoc[12] = saveIt->second->getLocationPoint(12);
+					newLoc[13] = saveIt->second->getLocationPoint(13);
+
+					saveIt->second->setLocationPoints(newLoc[0], newLoc[1], newLoc[2], newLoc[3], newLoc[4], newLoc[5], newLoc[6], newLoc[7], newLoc[8], newLoc[9], newLoc[10], newLoc[11], newLoc[12], newLoc[13]);
+
+					break;
+				}
+				case 's':
+				{
+
+					saveIt->second->setScale(saveIt->second->getScale() + inx);
+					float drawScale = 1.0f + inx;
+					float newLoc[14];
+					for (int i = 0; i < 13; i++)
+					{
+						newLoc[i] = saveIt->second->getLocationPoint(i)*drawScale;
+					}
+					newLoc[12] = saveIt->second->getLocationPoint(12);
+					newLoc[13] = saveIt->second->getLocationPoint(13);
+					saveIt->second->setLocationPoints(newLoc[0], newLoc[1], newLoc[2], newLoc[3], newLoc[4], newLoc[5], newLoc[6], newLoc[7], newLoc[8], newLoc[9], newLoc[10], newLoc[11], newLoc[12], newLoc[13]);
+
+					break;
+				}
+				default:
+					break;
+				}
 
 			}
 
