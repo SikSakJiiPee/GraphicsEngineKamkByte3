@@ -11,8 +11,8 @@ public:
 	void addObject(std::string name, ObjectMold* gameObject);
 	void removeObject(std::string objectName );
 
-	int getObjectCount() const;
-	ObjectMold* getObject(std::string objectName)const;
+	int getObjectCount();
+	ObjectMold* getObject(std::string objectName);
 
 	void saveContainerBin();
 	void loadContainerBin();

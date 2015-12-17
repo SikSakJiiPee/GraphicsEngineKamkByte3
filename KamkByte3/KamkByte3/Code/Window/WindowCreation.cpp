@@ -38,7 +38,6 @@ int WindowCreation::makeNewWindow(int argc, char* argv[])
 	DrawMovement* Momentum = new DrawMovement();
 	ObjectContainer* ObjectAccess = new ObjectContainer;
 	ObjectAccess->loadContainerBin();
-
 	//Looppi
 	BOOLEAN running = TRUE;
 	while (running != FALSE)

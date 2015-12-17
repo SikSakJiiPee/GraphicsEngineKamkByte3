@@ -69,6 +69,43 @@ bool InputManager::wasKeyDown(unsigned int keyID)
 
 void InputManager::Process(ObjectContainer* Access,DrawMovement* move)
 {
+	if (isKeyDown(SDLK_LSHIFT))
+	{
+		if (isKeyDown(SDLK_w))
+		{
+			move->MoveCamera( Access, 'u');
+		}
+		if (isKeyDown(SDLK_s))
+		{
+			move->MoveCamera( Access, 'd');
+		}
+		if (isKeyDown(SDLK_d))
+		{
+			move->MoveCamera( Access, 'r');
+		}
+		if (isKeyDown(SDLK_a))
+		{
+			move->MoveCamera( Access, 'l');
+		}
+		if (isKeyDown(SDLK_e))
+		{
+			move->MoveCamera( Access, 'e');
+		}
+		if (isKeyDown(SDLK_q))
+		{
+			move->MoveCamera( Access, 'q');
+		}
+		if (isKeyDown(SDLK_z))
+		{
+			move->MoveCamera( Access, 'b');
+		}
+
+		if (isKeyDown(SDLK_x))
+		{
+			move->MoveCamera( Access, 's');
+		}
+
+	}
 	
 	if (isKeyDown(SDLK_w))
 	{
