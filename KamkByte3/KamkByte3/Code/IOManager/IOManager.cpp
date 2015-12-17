@@ -13,10 +13,10 @@ bool IOManager::readFileToBuffer(std::string filePath, std::vector<unsigned char
 		return false;
 	}
 
-	//Seek to the end  //Selataan loppuun
+	//Selataan loppuun
 	file.seekg(0, std::ios::end);
 
-	//Get the file size  //Otetaan tiedosto koko
+	//Otetaan tiedosto koko
 	int fileSize = file.tellg();
 	file.seekg(0, std::ios::beg);
  
