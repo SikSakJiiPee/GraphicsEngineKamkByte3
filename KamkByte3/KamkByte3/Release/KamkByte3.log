@@ -1,17 +1,28 @@
-﻿Build started 25.9.2015 11:49:44.
-     1>Project "C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\KamkByte3\KamkByte3.vcxproj" on node 2 (Build target(s)).
-     1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
-         Main.cpp
-       Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Release\KamkByte3.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Release\KamkByte3.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Release\KamkByte3.lib" /MACHINE:X86 /SAFESEH Release\AllIncludes.obj
+﻿Build started 17.12.2015 20.43.47.
+     1>Project "C:\Users\Jussi\Desktop\GraphicsEngineKamkByte3\KamkByte3\KamkByte3\KamkByte3.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Jussi\Desktop\GraphicsEngineKamkByte3\KamkByte3\Release\KamkByte3.exe" /NOLOGO opengl32.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Jussi\Desktop\GraphicsEngineKamkByte3\KamkByte3\Release\KamkByte3.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Jussi\Desktop\GraphicsEngineKamkByte3\KamkByte3\Release\KamkByte3.lib" /MACHINE:X86 /SAFESEH Release\AllIncludes.obj
+         Release\ErrorManager.obj
+         Release\GLSLProgram.obj
+         Release\ImageLoader.obj
+         Release\InputManager.obj
+         Release\IOManager.obj
+         Release\ObjectContainer.obj
+         Release\ObjectMold.obj
+         Release\DrawMovement.obj
+         Release\picoPNG.obj
+         Release\RendererClass.obj
+         Release\ResourceManager.obj
+         Release\Sprite.obj
+         Release\TextureCache.obj
          Release\WindowCreation.obj
          Release\Main.obj
-     1>Main.obj : error LNK2001: unresolved external symbol "public: int __thiscall WindowCreation::makeNewWindow(void)" (?makeNewWindow@WindowCreation@@QAEHXZ)
-     1>SDL2main.lib(SDL_windows_main.obj) : error LNK2001: unresolved external symbol _SDL_main
-     1>C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\Release\KamkByte3.exe : fatal error LNK1120: 2 unresolved externals
-     1>Done Building Project "C:\Users\lassikes\Documents\Visual Studio 2013\Projects\KamkByte3\KamkByte3\KamkByte3.vcxproj" (Build target(s)) -- FAILED.
+         Generating code
+     1>c:\users\jussi\desktop\graphicsenginekamkbyte3\kamkbyte3\kamkbyte3\code\objectrelatives\mold\objectmold.cpp(145): warning C4715: 'ObjectMold::getOrigin' : not all control paths return a value
+         Finished generating code
+         KamkByte3.vcxproj -> C:\Users\Jussi\Desktop\GraphicsEngineKamkByte3\KamkByte3\Release\KamkByte3.exe
+     1>Done Building Project "C:\Users\Jussi\Desktop\GraphicsEngineKamkByte3\KamkByte3\KamkByte3\KamkByte3.vcxproj" (Build target(s)).
 
-Build FAILED.
+Build succeeded.
 
-Time Elapsed 00:00:00.64
+Time Elapsed 00:00:01.04
