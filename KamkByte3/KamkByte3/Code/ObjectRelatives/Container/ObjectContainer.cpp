@@ -1,12 +1,47 @@
 #include "ObjectContainer.h"
-//
 
+//
 void ObjectContainer::addObject( std::string name, ObjectMold* gameObject)
 {	
 	allObjects.insert(std::pair<std::string, ObjectMold*>(name, gameObject));
 	std::cout<<"\n" << name <<"\n"<< gameObject << "\nInserted into container.\n";
 	gameObject->readObject();
-
+	/*
+	//Texture for object
+	if (gameObject->getDirectory() != "Directory")
+	{
+	
+		sprites.push_back(new Sprite());
+		float x = gameObject->getLocationPoint(0);
+		if (x < 0)
+		{
+			x *= -1.0f;
+		}
+		if (gameObject->getLocationPoint(2) < 0)
+		{
+			x += (gameObject->getLocationPoint(2)*-1.0f);
+		}
+		else
+		{
+			x += gameObject->getLocationPoint(2);
+		}
+		float y = gameObject->getLocationPoint(1);
+		if (y < 0)
+		{
+			y *= -1.0f;
+		}
+		if (gameObject->getLocationPoint(5) < 0)
+		{
+			y += (gameObject->getLocationPoint(5)*-1.0f);
+		}
+		else
+		{
+			y += gameObject->getLocationPoint(5);
+		}
+		
+		sprites.back()->init(0.0f, 0.0f, x, y, gameObject->getDirectory());
+	
+	}*/
 }
 
 void ObjectContainer::removeObject( std::string objectName)

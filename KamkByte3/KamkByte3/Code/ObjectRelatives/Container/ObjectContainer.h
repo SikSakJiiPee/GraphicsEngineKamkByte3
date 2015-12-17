@@ -1,7 +1,8 @@
 #pragma once
 #include "../../AllIncludes/AllIncludes.cpp"
 #include "../Mold/ObjectMold.h"
-//
+#include"../../Sprite/Sprite.h"
+
 class ObjectContainer
 {
 public:
@@ -22,5 +23,6 @@ public:
 
 private:
 	std::map<std::string, ObjectMold*>allObjects;
+	std::vector <Sprite*> sprites;
 };
 
