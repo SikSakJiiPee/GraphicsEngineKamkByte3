@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="Code\ShaderManager\ShaderManager.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
     <ClCompile Include="Code\AllIncludes\AllIncludes.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
@@ -37,6 +34,21 @@
     <ClCompile Include="Code\ObjectRelatives\Movement\DrawMovement.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="Code\ImageLoader\ImageLoader.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\picoPNG\picoPNG.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\ResourceManager\ResourceManager.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\TextureCache\TextureCache.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\IOManager\IOManager.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\ObjectRelatives\Container\ObjectContainer.h">
@@ -46,9 +58,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Code\RendererClass\RendererClass.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Code\ShaderManager\ShaderManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Code\Window\WindowCreation.h">
@@ -70,6 +79,24 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Code\Vertex\Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\ImageLoader\ImageLoader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\picoPNG\picoPNG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\ResourceManager\ResourceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\TextureCache\TextureCache.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\IOManager\IOManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Code\GLTexture\GLTexture.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

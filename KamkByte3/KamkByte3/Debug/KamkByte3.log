@@ -1,19 +1,27 @@
-﻿Build started 15.12.2015 14:51:32.
+﻿Build started 17.12.2015 14:31:04.
      1>Project "C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\KamkByte3\KamkByte3.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Code\Sprite\Sprite.cpp
-         Sprite.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Code\ImageLoader\ImageLoader.cpp Code\TextureCache\TextureCache.cpp
+         ImageLoader.cpp
+         Generating Code...
+         Compiling...
+         TextureCache.cpp
+         Generating Code...
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\Debug\KamkByte3.exe" /INCREMENTAL /NOLOGO opengl32.lib glew32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\Debug\KamkByte3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\Debug\KamkByte3.lib" /MACHINE:X86 Debug\AllIncludes.obj
          Debug\ErrorManager.obj
          Debug\GLSLProgram.obj
+         Debug\ImageLoader.obj
          Debug\InputManager.obj
+         Debug\IOManager.obj
          Debug\ObjectContainer.obj
          Debug\ObjectMold.obj
          Debug\DrawMovement.obj
+         Debug\picoPNG.obj
          Debug\RendererClass.obj
-         Debug\ShaderManager.obj
+         Debug\ResourceManager.obj
          Debug\Sprite.obj
+         Debug\TextureCache.obj
          Debug\WindowCreation.obj
          Debug\Main.obj
          KamkByte3.vcxproj -> C:\Users\jussi-pekkajar\Desktop\GraphicsEngineKamkByte3\KamkByte3\Debug\KamkByte3.exe
@@ -21,4 +29,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.25
+Time Elapsed 00:00:01.56

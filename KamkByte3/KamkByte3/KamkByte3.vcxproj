@@ -76,26 +76,35 @@
     <ClCompile Include="Code\AllIncludes\AllIncludes.cpp" />
     <ClCompile Include="Code\ErrorManager\ErrorManager.cpp" />
     <ClCompile Include="Code\GLSLProgram\GLSLProgram.cpp" />
+    <ClCompile Include="Code\ImageLoader\ImageLoader.cpp" />
     <ClCompile Include="Code\InputManager\InputManager.cpp" />
+    <ClCompile Include="Code\IOManager\IOManager.cpp" />
     <ClCompile Include="Code\ObjectRelatives\Container\ObjectContainer.cpp" />
     <ClCompile Include="Code\ObjectRelatives\Mold\ObjectMold.cpp" />
     <ClCompile Include="Code\ObjectRelatives\Movement\DrawMovement.cpp" />
+    <ClCompile Include="Code\picoPNG\picoPNG.cpp" />
     <ClCompile Include="Code\RendererClass\RendererClass.cpp" />
-    <ClCompile Include="Code\ShaderManager\ShaderManager.cpp" />
+    <ClCompile Include="Code\ResourceManager\ResourceManager.cpp" />
     <ClCompile Include="Code\Sprite\Sprite.cpp" />
+    <ClCompile Include="Code\TextureCache\TextureCache.cpp" />
     <ClCompile Include="Code\Window\WindowCreation.cpp" />
     <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Code\ErrorManager\ErrorManager.h" />
     <ClInclude Include="Code\GLSLProgram\GLSLProgram.h" />
+    <ClInclude Include="Code\GLTexture\GLTexture.h" />
+    <ClInclude Include="Code\ImageLoader\ImageLoader.h" />
     <ClInclude Include="Code\InputManager\InputManager.h" />
+    <ClInclude Include="Code\IOManager\IOManager.h" />
     <ClInclude Include="Code\ObjectRelatives\Container\ObjectContainer.h" />
     <ClInclude Include="Code\ObjectRelatives\Mold\ObjectMold.h" />
     <ClInclude Include="Code\ObjectRelatives\Movement\DrawMovement.h" />
+    <ClInclude Include="Code\picoPNG\picoPNG.h" />
     <ClInclude Include="Code\RendererClass\RendererClass.h" />
-    <ClInclude Include="Code\ShaderManager\ShaderManager.h" />
+    <ClInclude Include="Code\ResourceManager\ResourceManager.h" />
     <ClInclude Include="Code\Sprite\Sprite.h" />
+    <ClInclude Include="Code\TextureCache\TextureCache.h" />
     <ClInclude Include="Code\Vertex\Vertex.h" />
     <ClInclude Include="Code\Window\WindowCreation.h" />
   </ItemGroup>
